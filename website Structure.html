@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <script>
+            let op=" "
+            function myExcel funs() {
+                let ob = document.getElementById("t1")
+                let s1 =ob.value
+                let arr = s1.split(" ")
+                let m=0
+                if (op=='max'){
+                    m=math.max(...arr)
+                }
+                else if (op=='min') {
+                    m=Math.min (...arr)
+                }
+                else if (op=='avg'){
+                    arr.forEach(element => {
+                        m=m+element
+                    });
+                }
+                alert(m)
+
+            }
+            function check (p) {
+                op=p.value
+            }
+        </script>
+    </head>
+    <body>
+        <input type="text" id="t1">
+        <br>
+        <input type="button" value="ok" onclick="myExcel funs()">
+        <br>
+        <input type="radio" value="min" id="r1" name="op" onclick="check('this')>"Min"
+        <br>
+        <input type="radio" value="mix" id="r2" name="op" onclick="check('this')>"Max"
+        <br>
+        <input type="radio" value="avg" id="r3" name="op" onclick="check('this')>"avg"
+        
+        <div id="d1"> </div>
+        <div id="d2"> </div>
+        <div id="d3"> </div>
+    </body>
+</html>
