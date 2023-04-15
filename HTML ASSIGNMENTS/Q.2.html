@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>FORM</title>
+    <body>
+        <form>
+        <!-- <script>
+            function userForm() {
+                lname=first name,last name,Email,Addr,City
+                first name=document.getElementById(" first name")
+                last name=document.getElementById("last name")
+                Email =document.getElementById("Email")
+                Addr=document.getElementById("Addr")
+                City=document.getElementById("city")
+            } -->
+        <!-- </script> -->
+        FIRST NAME<input type="text" id="first name" required>
+        <br><br>
+        LAST NAME<input type="text" id="last name" required> 
+        <br><br>
+        EMAIL<input type="text" id="email" required>
+        <br><br>
+        ADDRESS<input type="text"id="addr" required>
+        <br><br>
+         CITY<input type="text" id="City" required>
+        <br><br>
+    
+        </form>
+        <input type="submit" onclick="userForm()">
+        <input type="reset">
+        <br><br>
+
+    <table border="1" id="mytable">
+        <tr> 
+            <th>FIRST NAME</th>
+            <th>LAST NAME</th>
+            <th>EMAIL</th>
+            <th>ADDRESS</th>
+            <th>CITY</th>
+        </tr>
+        
+    </table>
+        <script>
+            function userForm() {
+                // lname=first name,last name,Email,Addr,City
+                first name=document.getElementById(" first name").value
+                last name=document.getElementById("last name").value
+                Email =document.getElementById("Email").value
+                Addr=document.getElementById("Addr").value
+                City=document.getElementById("city").value
+            }
+
+            let mt = document.getElementById("mytable")
+            let tr1= document.createElement('tr')
+
+        let arr[fname,lanme,email,addr,city]
+            for (let i=0; i<arr.length; i++) {
+                let c1 = document.createElement('td')
+
+                c1.textContent = arr[i]
+
+            tr1.append(c1)
+            mt.append(tr1)
+            }
+        </script>
+            
+        </script>
+        <!-- <input type="button" value="click here" onclick="userForm()"> -->
+    </body>
+    </head>
+    
+</html>

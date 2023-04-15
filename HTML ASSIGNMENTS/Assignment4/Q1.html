@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <style>
+            .red{
+                border:5px solid;
+                background-color: red;
+                margin-top: 100px;
+                margin-left: 100px;
+                margin-right: 300px;
+                margin-bottom: 200px;
+            }
+            .green{
+                border:5px double;
+                background-color:green;
+                margin-top: 100px;
+                margin-left: 100px;
+                margin-right: 300px;
+                margin-bottom: 200px;
+            }
+            .yellow{
+               border:5px solid; 
+               background-color: yellow;
+               margin-top: 100px;
+               margin-left: 100px;
+               margin-right: 300px;
+               margin-bottom: 200px;
+               padding-top: 200px;
+               padding-left: 100px;
+               padding-bottom: 300px;
+               padding-right: 700px;
+            
+            }
+        </style>
+        <script>
+            function cheack(ob){
+                op=ob.value
+
+            let ob2=document.getElementById("p1")
+
+            if (op=="red"){
+                ob2.className="red"
+                alert(op)
+            }
+            else if(op=="green")
+            {
+                ob2.className="green"
+                alert(op)
+            }
+            else if(op=="yellow")
+            {
+                ob2.className="yellow"
+                alert(op)
+            }
+        }
+
+        </script>
+
+    </head>
+    <body>
+        <p class="red" id="p1">
+         this is paragraph
+        </p>
+        <input type="radio" id="r1" value="red" name=op onclick=cheack(this)>RED
+    <input type="radio" id="r2" value="green" name=op onclick=cheack(this)>GREEN
+    <input type="radio" id="r3" value="yellow" name=op onclick=cheack(this)>YELLOW
+
+    </body>
+</html>
