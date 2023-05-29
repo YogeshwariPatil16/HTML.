@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> </title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            margin: 40px;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+        }
+
+        .content {
+            grid-area: content;
+        }
+
+        .header {
+            grid-area: header;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: 100px 100px 100px 
+            grid-template-areas:
+            "....header header"
+                "sidebar content content"
+                "footer footer footer";
+            background-color: aqua;
+            grid-gap: 10px;
+            color: #444;
+        }
+
+        .box {
+            display: grid;
+            background-color: #444;
+            color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            font-size: 150%;
+            border: solid;
+        }
+
+        .header {
+            background-color: #999;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper"></div>
+    <div class="box header">Header</div>
+    <div class="box sidebar">Sidebar</div>
+    <div class="box content">Content</div>
+    <div class="box footer">Footer</div>
+</body>
+
+</html>
